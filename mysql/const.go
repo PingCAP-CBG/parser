@@ -30,8 +30,11 @@ var (
 	// TiDBReleaseVersion is initialized by (git describe --tags) in Makefile.
 	TiDBReleaseVersion = "None"
 
+	// CustomizedReleaseVersion is initialized by (your definition) in Makefile.
+	CustomizedReleaseVersion = "None"
+
 	// ServerVersion is the version information of this tidb-server in MySQL's format.
-	ServerVersion = fmt.Sprintf("5.7.25-UbiSQL-%s", TiDBReleaseVersion)
+	ServerVersion = fmt.Sprintf("5.7.25-UbiSQL-%s", CustomizedReleaseVersion)
 )
 
 // Header information.
